@@ -1,0 +1,47 @@
+graph TD
+    A[User Input<br/>Natural Language Task] --> B[OpenRouter Planner]
+    B --> C{AI Task Plan<br/>JSON Format}
+    C --> D[Selenium Executor]
+    D --> E[Runtime Monitor]
+    E --> F[Event Listeners]
+    
+    F --> G1[Console Output]
+    F --> G2[Log Files]
+    F --> G3[Custom Handlers]
+    
+    D --> H[Chrome Browser]
+    H --> I{Execution Result}
+    
+    I -->|Success| J[Complete]
+    I -->|Failure| K{Auto Retry?}
+    
+    K -->|Yes| L[AI Error Analysis]
+    L --> M[Refined Plan]
+    M --> D
+    
+    K -->|No| N[Failed]
+    
+    style A fill:#e1f5ff
+    style C fill:#fff4e1
+    style E fill:#e8f5e9
+    style I fill:#fce4ec
+    style J fill:#c8e6c9
+    style N fill:#ffcdd2
+    
+    subgraph "AI Layer"
+        B
+        L
+    end
+    
+    subgraph "Execution Layer"
+        D
+        H
+    end
+    
+    subgraph "Monitoring Layer"
+        E
+        F
+        G1
+        G2
+        G3
+    end
