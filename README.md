@@ -15,7 +15,7 @@ uv run main.py
 ---
 
 ### architecture.mermaid
-![architecture.mermaid](./.preview/Untitled Diagram-2026-02-03T08-57-45.svg)
+![architecture.mermaid](./.preview/Diagram.png)
 ## Features
 
 ✓ **AI Task Planning**: Natural language → Selenium commands
