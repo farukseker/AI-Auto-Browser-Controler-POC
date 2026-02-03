@@ -13,6 +13,9 @@ uv sync
 uv run main.py
 ```
 ---
+
+### architecture.mermaid
+![architecture.mermaid](./.preview/Untitled Diagram-2026-02-03T08-57-45.svg)
 ## Features
 
 ✓ **AI Task Planning**: Natural language → Selenium commands
@@ -519,7 +522,7 @@ Contributions welcome! Areas for improvement:
 
 ## License
 
-MIT License - use freely in your projects
+MIT License
 
 ## Support
 
